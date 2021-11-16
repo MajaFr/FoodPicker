@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Food_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgimage" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dvx-k3-7SY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zLs-dx-Xcn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgY-7y-VRj">
+                                <rect key="frame" x="97" y="722" width="220" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="54N-Ww-Szs"/>
+                                    <constraint firstAttribute="width" constant="220" id="Z7p-9X-cYz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Choose A Food">
+                                            <attributes>
+                                                <color key="NSColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="25" name="Times-Roman"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapChooseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WSI-CE-dGc"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's choice is ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cak-Fi-bGw">
+                                <rect key="frame" x="82" y="114" width="250" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5Sc-0Q-uQh"/>
+                                    <constraint firstAttribute="height" constant="45" id="Wdd-bu-JG9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="27"/>
+                                <color key="textColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pierogi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-Zq-4mh">
+                                <rect key="frame" x="57" y="199" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="DWX-rw-HK5"/>
+                                    <constraint firstAttribute="height" constant="50" id="fHC-Yl-VcB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="40"/>
+                                <color key="textColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zLs-dx-Xcn" secondAttribute="bottom" id="0Hs-Pm-sja"/>
+                            <constraint firstItem="zLs-dx-Xcn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8nM-HN-uny"/>
+                            <constraint firstItem="LgY-7y-VRj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FOJ-7Q-VAn"/>
+                            <constraint firstItem="zLs-dx-Xcn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GLi-FC-STs"/>
+                            <constraint firstItem="Dvx-k3-7SY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Htn-gu-y2Q"/>
+                            <constraint firstItem="zLs-dx-Xcn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JbG-oz-8rP"/>
+                            <constraint firstItem="KGz-Zq-4mh" firstAttribute="top" secondItem="cak-Fi-bGw" secondAttribute="bottom" constant="40" id="MCQ-gr-Cku"/>
+                            <constraint firstAttribute="trailing" secondItem="Dvx-k3-7SY" secondAttribute="trailing" id="TTV-un-uZD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LgY-7y-VRj" secondAttribute="bottom" constant="70" id="TaT-11-SI2"/>
+                            <constraint firstItem="cak-Fi-bGw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WXA-Oa-eRS"/>
+                            <constraint firstItem="cak-Fi-bGw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="dal-AN-q0Y"/>
+                            <constraint firstAttribute="bottom" secondItem="Dvx-k3-7SY" secondAttribute="bottom" id="koM-c3-jXi"/>
+                            <constraint firstItem="Dvx-k3-7SY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pUc-kf-xYd"/>
+                            <constraint firstItem="KGz-Zq-4mh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vCB-hd-ep2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="LgY-7y-VRj" id="Ta3-N3-bR0"/>
+                        <outlet property="foodTypeLabel" destination="KGz-Zq-4mh" id="DXz-gg-xGi"/>
+                        <outlet property="todayChoiceLabel" destination="cak-Fi-bGw" id="u0b-EZ-hDj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgimage" width="564" height="844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

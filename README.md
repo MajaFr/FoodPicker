@@ -1,2 +1,2 @@
 # FoodPicker
-App to choose food
+# FoodPicker
